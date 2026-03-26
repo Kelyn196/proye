@@ -1,0 +1,55 @@
+.hero {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../img/banner.jpg"); 
+
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  color: @white;
+
+  .container {
+    max-width: 600px;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+
+    @media (min-width: 720px) {
+      font-size: 3rem;
+    }
+  }
+
+  p {
+    font-size: 1rem;
+    margin-bottom: 25px;
+
+    @media (min-width: 720px) {
+      font-size: 1.2rem;
+    }
+  }
+
+  .btn {
+    background-color: @primary-background-color;
+    color: @white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: lighten(@primary-background-color, 10%);
+      transform: scale(1.05);
+    }
+  }
+}
